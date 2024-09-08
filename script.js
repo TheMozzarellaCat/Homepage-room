@@ -41,9 +41,9 @@ const articleText = document.querySelector(".article-text-1");
 
 const changeSlide = () => {
     if (window.screen.width >= 1440) {
-        image.style.backgroundImage = `url(/images/desktop-image-hero-${currentSlide}.jpg)`
+        image.style.backgroundImage = `url(images/desktop-image-hero-${currentSlide}.jpg)`
     }else{
-        image.style.backgroundImage = `url(/images/mobile-image-hero-${currentSlide}.jpg)`
+        image.style.backgroundImage = `url(images/mobile-image-hero-${currentSlide}.jpg)`
     }
     articleTitle.textContent = texts[currentSlide - 1].title;
     articleText.textContent = texts[currentSlide - 1].content;
