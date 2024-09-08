@@ -9,10 +9,10 @@ menuButton.addEventListener('click', ()=>{
     header.classList.add("shadow")
 
     if(iconChange == 0){
-        menuButton.src = "/images/icon-close.svg"
+        menuButton.src = "images/icon-close.svg"
         ++iconChange
     }else if(iconChange == 1){
-        menuButton.src = "/images/icon-hamburger.svg"
+        menuButton.src = "images/icon-hamburger.svg"
         --iconChange
     }
 })
