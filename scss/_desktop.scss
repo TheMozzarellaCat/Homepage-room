@@ -1,0 +1,152 @@
+@use 'variables' as *;
+
+@media  screen and (min-width: 1440px) {
+    
+body{
+    margin: 0px;
+    font-size: 12px;
+    font-family: "League Spartan", sans-serif;
+}
+.first-site-container{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+header{
+    background-image: url(/images/desktop-image-hero-1.jpg);
+    height: 70vh;
+    width: 100%;
+    display: block;
+    position: none;
+    background-repeat: no-repeat;
+    padding-top: 3.2vh;
+    box-sizing: border-box;
+    .logo-container{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-icon{
+        position: absolute;
+        left: 6%;
+        top: 3.2vh;
+        z-index: 2;
+        display: none;
+    }
+    nav{
+        z-index: 1;
+        background-color: transparent;
+        height: 8vh;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20%;
+        box-sizing: border-box;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+        a{
+            color: $White;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .arrow-container{
+        position: absolute;
+        bottom: 0;
+        right: -14vh;
+        height: 7vh;
+        width: 14vh;
+        background-color: black;
+        z-index: 1;
+        display: flex;
+    }
+    .left-arrow{
+        height: 7vh;
+        width: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: $Very-Dark-Gray;
+        }
+    }
+    .right-arrow{
+        height: 7vh;
+        width: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: $Very-Dark-Gray;
+        }
+    }
+}
+main{
+    height: auto;
+    width: 40%;
+    padding: 20vh 8%;
+    .article-title-1{
+        display: block;
+        color: $Black;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .article-text-1{
+        display: block;
+        line-height: 18px;
+        color: $Dark-Gray;
+        margin-top: 3vh;
+        font-size: 14px;
+    }
+    .shop-directory{
+        color: $Black;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-weight: 700;
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+        &:active{
+            color: $Very-Dark-Gray;
+        }
+    }
+}
+.second-site-container{
+    display: flex;
+    .dark-sofa-picture{
+        height: 30vh;
+        width: 50%;
+        background-image: url(/images/image-about-dark.jpg);
+        background-size: cover;
+    }
+    .article{
+        width: 60%;
+    }
+    .second-article-title{
+        color: $Black;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-left: 6%;
+        margin-top: 4vh;
+    }
+    .second-article-text{
+        color: $Dark-Gray;
+        margin-left: 6%;
+        margin-top: 2vh;
+        line-height: 16px;
+        width: 80%;
+    }
+    .light-sofa-picture{
+        margin-top: 0;
+        height: 30vh;
+        width: 48.5%;
+        background-image: url(/images/image-about-light.jpg);
+        background-size: cover;
+    }
+}
+}

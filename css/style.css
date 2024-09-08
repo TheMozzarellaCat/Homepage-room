@@ -1,0 +1,303 @@
+body {
+  margin: 0px;
+  font-size: 12px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.first-site-container {
+  height: auto;
+  width: 100%;
+}
+
+header {
+  background-image: url(/images/mobile-image-hero-1.jpg);
+  height: 37vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  padding-top: 3.2vh;
+  box-sizing: border-box;
+}
+header .logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .menu-icon {
+  position: absolute;
+  left: 6%;
+  top: 3.2vh;
+  z-index: 2;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: hsl(0, 0%, 100%);
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 23%;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+header nav a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+header nav.menu-entry {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .arrow-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 5.5vh;
+  width: 12vh;
+  background-color: black;
+  z-index: 1;
+  display: flex;
+}
+header .left-arrow {
+  height: 5.5vh;
+  width: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .left-arrow:active {
+  background-color: hsl(0, 0%, 27%);
+}
+header .right-arrow {
+  height: 5.5vh;
+  width: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .right-arrow:active {
+  background-color: hsl(0, 0%, 27%);
+}
+
+main {
+  height: auto;
+  padding: 5vh 8%;
+}
+main .article-title-1 {
+  display: block;
+  color: hsl(0, 0%, 0%);
+  font-size: 35px;
+  font-weight: 700;
+}
+main .article-text-1 {
+  display: block;
+  line-height: 16px;
+  color: hsl(0, 0%, 63%);
+  margin-top: 1vh;
+  font-size: 12px;
+}
+main .shop-directory {
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  letter-spacing: 14px;
+  font-weight: 700;
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+}
+main .shop-directory:active {
+  color: hsl(0, 0%, 27%);
+}
+
+.second-site-container {
+  height: auto;
+}
+.second-site-container .dark-sofa-picture {
+  height: 27vh;
+  width: 100%;
+  background-image: url(/images/image-about-dark.jpg);
+}
+.second-site-container .second-article-title {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-left: 6%;
+  margin-top: 4vh;
+}
+.second-site-container .second-article-text {
+  color: hsl(0, 0%, 63%);
+  margin-left: 6%;
+  margin-top: 2vh;
+  line-height: 16px;
+}
+.second-site-container .light-sofa-picture {
+  margin-top: 2vh;
+  height: 27vh;
+  width: 100%;
+  background-image: url(/images/image-about-light.jpg);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0px;
+    font-size: 12px;
+    font-family: "League Spartan", sans-serif;
+  }
+  .first-site-container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+  }
+  header {
+    background-image: url(/images/desktop-image-hero-1.jpg);
+    height: 70vh;
+    width: 100%;
+    display: block;
+    position: none;
+    background-repeat: no-repeat;
+    padding-top: 3.2vh;
+    box-sizing: border-box;
+  }
+  header .logo-container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  header .menu-icon {
+    position: absolute;
+    left: 6%;
+    top: 3.2vh;
+    z-index: 2;
+    display: none;
+  }
+  header nav {
+    z-index: 1;
+    background-color: transparent;
+    height: 8vh;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20%;
+    box-sizing: border-box;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  header nav a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  header .arrow-container {
+    position: absolute;
+    bottom: 0;
+    right: -14vh;
+    height: 7vh;
+    width: 14vh;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+  }
+  header .left-arrow {
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .left-arrow:active {
+    background-color: hsl(0, 0%, 27%);
+  }
+  header .right-arrow {
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .right-arrow:active {
+    background-color: hsl(0, 0%, 27%);
+  }
+  main {
+    height: auto;
+    width: 40%;
+    padding: 20vh 8%;
+  }
+  main .article-title-1 {
+    display: block;
+    color: hsl(0, 0%, 0%);
+    font-size: 40px;
+    font-weight: 700;
+  }
+  main .article-text-1 {
+    display: block;
+    line-height: 18px;
+    color: hsl(0, 0%, 63%);
+    margin-top: 3vh;
+    font-size: 14px;
+  }
+  main .shop-directory {
+    color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    letter-spacing: 14px;
+    font-weight: 700;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+  }
+  main .shop-directory:active {
+    color: hsl(0, 0%, 27%);
+  }
+  .second-site-container {
+    display: flex;
+  }
+  .second-site-container .dark-sofa-picture {
+    height: 30vh;
+    width: 50%;
+    background-image: url(/images/image-about-dark.jpg);
+    background-size: cover;
+  }
+  .second-site-container .article {
+    width: 60%;
+  }
+  .second-site-container .second-article-title {
+    color: hsl(0, 0%, 0%);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-left: 6%;
+    margin-top: 4vh;
+  }
+  .second-site-container .second-article-text {
+    color: hsl(0, 0%, 63%);
+    margin-left: 6%;
+    margin-top: 2vh;
+    line-height: 16px;
+    width: 80%;
+  }
+  .second-site-container .light-sofa-picture {
+    margin-top: 0;
+    height: 30vh;
+    width: 48.5%;
+    background-image: url(/images/image-about-light.jpg);
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

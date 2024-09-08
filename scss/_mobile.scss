@@ -1,0 +1,148 @@
+@use 'variables' as *;
+body{
+    margin: 0px;
+    font-size: 12px;
+    font-family: "League Spartan", sans-serif;
+}
+.first-site-container{
+    height: auto;
+    width: 100%;
+}
+header{
+    background-image: url(/images/mobile-image-hero-1.jpg);
+    height: 37vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    padding-top: 3.2vh;
+    box-sizing: border-box;
+    .logo-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-icon{
+        position: absolute;
+        left: 6%;
+        top: 3.2vh;
+        z-index: 2;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $White;
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 23%;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+        a{
+            color: $Black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &.menu-entry{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    .arrow-container{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 5.5vh;
+        width: 12vh;
+        background-color: black;
+        z-index: 1;
+        display: flex;
+    }
+    .left-arrow{
+        height: 5.5vh;
+        width: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: $Very-Dark-Gray;
+        }
+    }
+    .right-arrow{
+        height: 5.5vh;
+        width: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:active{
+            background-color: $Very-Dark-Gray;
+        }
+    }
+}
+main{
+    height: auto;
+    padding: 5vh 8%;
+    .article-title-1{
+        display: block;
+        color: $Black;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .article-text-1{
+        display: block;
+        line-height: 16px;
+        color: $Dark-Gray;
+        margin-top: 1vh;
+        font-size: 12px;
+    }
+    .shop-directory{
+        color: $Black;
+        text-transform: uppercase;
+        letter-spacing: 14px;
+        font-weight: 700;
+        margin-top: 2vh;
+        display: flex;
+        align-items: center;
+        &:active{
+            color: $Very-Dark-Gray;
+        }
+    }
+}
+.second-site-container{
+    height: auto;
+    .dark-sofa-picture{
+        height: 27vh;
+        width: 100%;
+        background-image: url(/images/image-about-dark.jpg);
+    }
+    .second-article-title{
+        color: $Black;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-left: 6%;
+        margin-top: 4vh;
+    }
+    .second-article-text{
+        color: $Dark-Gray;
+        margin-left: 6%;
+        margin-top: 2vh;
+        line-height: 16px;
+    }
+    .light-sofa-picture{
+        margin-top: 2vh;
+        height: 27vh;
+        width: 100%;
+        background-image: url(/images/image-about-light.jpg);
+    }
+}
