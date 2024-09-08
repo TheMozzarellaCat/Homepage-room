@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-image: url(/images/mobile-image-hero-1.jpg);
+  background-image: url(images/mobile-image-hero-1.jpg);
   height: 37vh;
   width: 100%;
   background-size: cover;
@@ -126,7 +126,7 @@ main .shop-directory:active {
 .second-site-container .dark-sofa-picture {
   height: 27vh;
   width: 100%;
-  background-image: url(/images/image-about-dark.jpg);
+  background-image: url(images/image-about-dark.jpg);
 }
 .second-site-container .second-article-title {
   color: hsl(0, 0%, 0%);
@@ -147,7 +147,7 @@ main .shop-directory:active {
   margin-top: 2vh;
   height: 27vh;
   width: 100%;
-  background-image: url(/images/image-about-light.jpg);
+  background-image: url(images/image-about-light.jpg);
 }
 
 @media screen and (min-width: 1440px) {
@@ -162,7 +162,7 @@ main .shop-directory:active {
     display: flex;
   }
   header {
-    background-image: url(/images/desktop-image-hero-1.jpg);
+    background-image: url(images/desktop-image-hero-1.jpg);
     height: 70vh;
     width: 100%;
     display: block;
@@ -269,7 +269,7 @@ main .shop-directory:active {
   .second-site-container .dark-sofa-picture {
     height: 30vh;
     width: 50%;
-    background-image: url(/images/image-about-dark.jpg);
+    background-image: url(images/image-about-dark.jpg);
     background-size: cover;
   }
   .second-site-container .article {
@@ -295,7 +295,7 @@ main .shop-directory:active {
     margin-top: 0;
     height: 30vh;
     width: 48.5%;
-    background-image: url(/images/image-about-light.jpg);
+    background-image: url(images/image-about-light.jpg);
     background-size: cover;
   }
 }
