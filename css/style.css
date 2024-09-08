@@ -269,7 +269,7 @@ main .shop-directory:active {
   .second-site-container .dark-sofa-picture {
     height: 30vh;
     width: 50%;
-    background-image: url(images/image-about-dark.jpg);
+    background-image: url(../images/image-about-dark.jpg);
     background-size: cover;
   }
   .second-site-container .article {
@@ -295,7 +295,7 @@ main .shop-directory:active {
     margin-top: 0;
     height: 30vh;
     width: 48.5%;
-    background-image: url(images/image-about-light.jpg);
+    background-image: url(../images/image-about-light.jpg);
     background-size: cover;
   }
 }
